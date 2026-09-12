@@ -8,6 +8,6 @@ public class Find_missing_number {
         for (int i = 0; i < n; i++) {
             a[i] = sc.nextInt();
         }
-        
+        int sum = n * (n+1)/2;
     }
 }
