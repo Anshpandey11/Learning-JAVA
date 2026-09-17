@@ -8,6 +8,6 @@ public class Sum_equal_target {
         for (int i = 0; i < n; i++) {
             a[i] = sc.nextInt();
         }
-        
+        int sum =0;
     }
 }
