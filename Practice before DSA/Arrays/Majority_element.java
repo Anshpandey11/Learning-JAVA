@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Sum_equal_target {
+public class Majority_element {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
@@ -8,15 +8,19 @@ public class Sum_equal_target {
         for (int i = 0; i < n; i++) {
             a[i] = sc.nextInt();
         }
-        int t = sc.nextInt();
-        int sum = 0;
+        int e = n / 2;
         for (int i = 0; i < n; i++) {
+            int c = 0;
             for (int j = i + 1; j < n; j++) {
-                sum = a[i] + a[j];
-                if (sum == t) {
-                    System.out.println(a[i] + "," + a[j]);
+                if (a[i] == a[j]) {
+                    c++;
                 }
             }
+            if (c > e) {
+                System.out.println(a[i]);
+                return;
+            }
         }
+
     }
 }
